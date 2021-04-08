@@ -1,3 +1,31 @@
+.custom-file-input::-webkit-file-upload-button {
+  visibility:hidden;
+}
+.custom-file-input::before {
+  content: 'Choose File';
+  display: inline-block;
+  background:#5969f3;
+  border-radius: 5px;
+  padding: 8px 20px;
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  cursor: pointer;
+  font-size: 10pt;
+    color: #fff;
+    border-color: #5969f3;
+   text-align: center;
+}
+.submit{
+    background: #5969f3;
+    padding: 5px 30px;
+    border-radius: 5px;
+    color: #fff; 
+    outline: none;
+     font-size: 10pt;
+    border-color: #5969f3;
+    text-align: center;
+}
 .navbar {
     padding: 0;
   }
@@ -158,7 +186,7 @@
     font-weight: 700;
     margin: 0;
     color: #4154f1;
-    text-transform: uppercase;
+    text-transform: lowercase;
   }
   
   .section-header p {
@@ -321,9 +349,10 @@
   }
   
   .hero h2 {
-    color: #444444;
-    margin: 15px 0 0 0;
+    color: powderblue;
+    margin: 10px 0 0 0;
     font-size: 26px;
+    text-align: center;
   }
   
   .hero .btn-get-started {
