@@ -57,21 +57,25 @@
 
   <body>
     <header th:replace="layout :: site-header" />
-    <section id="hero" class="hero d-flex align-items-center">
+    <section id="hero" class="hero d-flex">
       <div class="container">
-        <h2>AWS Photo Analyzer Application</h2>
-        <p>
+              <h1 style="color:#012970;font-style: normal;font-size: 40px; text-align: center">AWS Photo Analyzer Application</h1>
+          <br/> <br/>
+        <p style="  text-align: center;font-size: 20px">
           You can generate a report that analyzes the images in the S3 bucket.
           You can send the report to the following email address.
         </p>
-        <label for="email">Email address:</label><br />
+           <br/>
+           <div style="margin-left: 36%">
+        <label style="font-display: block;font-family: sans-serif;font-size: 20px"for="email">Email address:</label>
         <input type="text" id="email" name="email" value="" /><br />
-
-        <div>
+</div>
           <br />
 
-          <p>Click the following button to obtain a report</p>
-          <button onclick="ProcessImages()">Analyze Photos</button>
+          <p style="text-align: center">Click the following button to obtain a report</p>
+          <div style="margin-left: 45%" >
+        <button  style="background: #5969f3;padding: 15px 30px; border-radius: 5px; color: #fff;  outline: none;
+                      font-size: 10pt; border-color: #5969f3; text-align: center;"onclick="ProcessImages()">Analyze Photos</button>
         </div>
       </div>
     </section>
