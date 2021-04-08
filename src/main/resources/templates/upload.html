@@ -64,12 +64,10 @@
   <body>
     <header th:replace="layout :: site-header" />
 
-    <section id="hero" class="hero d-flex align-items-center">
+    <section id="hero" class="hero d-flex">
       <div class="container">
-        <h2 class="fs-5">AWS Photo Analyzer Application</h2>
-        <p class="fs-4">
-          Upload images to an S3 Bucket. Each image will be analysed!
-        </p>
+        <h1 style="color:#012970;font-style: normal;font-size: 40px; text-align: center">AWS Photo Analyzer Application</h1>
+        <p style="  text-align: center;font-size: 20px"> Upload images to an S3 Bucket. Each image will be analysed!</p>
 
         <form
           method="POST"
@@ -77,23 +75,22 @@
           action="/upload"
           enctype="multipart/form-data"
         >
-          <input type="file" name="file" /><br /><br />
-          <input type="submit" value="Submit" />
+         <div style="margin-left: 40%"><input type="file" class="custom-file-input"/><br /><br />
+          <input type="submit" value="Submit" class="submit"/></div>
         </form>
 
         <div>
-          <br />
+          <br/>
 
-          <p>
-            Click the following button to determine the number of images in the
-            bucket
+          <p style="text-align: center">
+            Click the following button to determine the number of images in the bucket
           </p>
 
-          <button onclick="getImages()">Get Images</button>
+          <button class="submit" style="margin-left: 40%" onclick="getImages()">Get Images</button><br/><br />
           <table
             id="myTable"
             class="table table-hover table-sm"
-            style="width: 100%"
+            style="width: 100%;border: 1px solid black;"
           >
             <thead class="table-dark">
               <tr>
